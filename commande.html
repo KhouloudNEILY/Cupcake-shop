@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CUPCAKESHOP</title>
+        <link rel="stylesheet" href="cupcake.css">
+    </head>
+    <body>
+        <header class="navbarhorizentale">
+            <div class="Logo">
+                <img src="https://img.freepik.com/vecteurs-premium/creation-logo-cupcake_9845-141.jpg?w=2000"  width="250" height="100">
+            </div>
+              <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">CupCake</a></li>
+                    <li><a href="">Design CupCak</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                    
+
+                </ul>
+              </nav>
+
+        </header>
+        <body>
+        <br>
+            <img src="https://i.pinimg.com/736x/62/b2/13/62b21311664b4e026ce7a7d1f4c9629d--cupcake-chocolat-patisserie.jpg"  width="500" height="500">
+            <h3>TO MAKE AN ORDER </h3>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+    <label for="lname">Phone Number</label>
+    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Your phone number..">
+    <div>
+        <label for="name">Quantity</label>
+        <input type="number" id="quantity" min="0" max="50" value="1"  >
+    </div>
+    <div>
+        <button class="favorite styled"   type="button" onclick="calculer()" >PRICE </button>
+    </div>
+    <div>
+        
+
+    </div>
+
+    <label for="Goverment">COVERMENT</label>
+    <select id="Goverment" name="Goverment">
+      <option value="Tunis">TUNIS</option>
+      <option value="Ariana">ARIANA</option>
+      <option value="Ben Arous">BEN AROUS</option>
+      <option value="Manouba">MANOUBA</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+        </br>
+        <script>
+            function price(quantity) {
+              
+                var price= quantity*3;
+                var calcul = total(quantity)
+            }
+            function calculer() {
+                    var Quantity= parseInt(document.getElementById("quantity").value);
+              ;
+                    </script>
+        </body>
+        </html>
